@@ -5,8 +5,8 @@ import java.util.HashMap;
 public class Registration {
 	static HashMap<String, String> loginList = new HashMap<String, String>();
 	static {
-		loginList.put("Mani375", "pass1234");
-		loginList.put("Muthu533", "pass6789");
+		loginList.put("User375", "pass1234");
+		loginList.put("User533", "pass6789");
 	}
 	
 	/**
@@ -49,11 +49,4 @@ public class Registration {
 		}
 		return validPassword;
 	}
-
-	/*
-	 * public static void displayUser() { for ( String key :
-	 * userNamePassword.keySet()) { System.out.println("UserName: " + key +"\n" +
-	 * "Password: " + userNamePassword.get(key) + "\n"); } }
-	 * 
-	 */
 }
