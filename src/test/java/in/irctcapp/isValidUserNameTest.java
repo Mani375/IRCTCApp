@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class isValidUserNameTest {
+public class IsValidUserNameTest {
 
 	@Test
 	// In this Test Case UserName is already Exists.

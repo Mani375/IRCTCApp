@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class isValidPasswordTest {
+public class IsValidPasswordTest {
 
 	@Test
 	// In this Test Case Password is Stronger.

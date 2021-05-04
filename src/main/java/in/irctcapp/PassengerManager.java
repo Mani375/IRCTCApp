@@ -2,47 +2,15 @@ package in.irctcapp;
 
 import java.util.HashMap;
 
-public class PassengerDetails {
-	public String name;
-	public int age;
-	public String gender;
-	public String nationality;
-	public String berthPreference;
-	
-	static HashMap<Integer, PassengerDetails> passengerList = new HashMap<Integer, PassengerDetails>();
-	
-	@Override
-	public String toString() {
-		return "PassengerDetails [name=" + name + ", age=" + age + ", gender=" + gender + ", nationality=" + nationality
-				+ ", berthPreference=" + berthPreference + "]";
-	}
-	
-	
-	/**
-	 * This Method is used to check the Age
-	 * @param age
-	 * @return
-	 * True or False
-	 */
-	public static boolean isValidAge(int age) {
-		boolean valid = false;
-		if(age > 1 && age < 100 ) {
-			System.out.println("Valid Age");
-			valid = true;
-		}
-		else {
-			System.out.println("Invalid Age");
-		}
-		return valid;
-	}
-	
+public class PassengerManager {	
+	static HashMap<Integer, Passenger> passengerList = new HashMap<Integer, Passenger>();
 	
 	/**
 	 * This Method is used to add the Passenger Details
 	 * @param serialNo
 	 * @param passenger
 	 */
-	public static void addPassenger(int serialNo, PassengerDetails passenger) {
+	public static void addPassenger(int serialNo, Passenger passenger) {
 		passengerList.put(serialNo, passenger);
 		System.out.println("Passenger Details added Successfully");
 	}
