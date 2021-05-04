@@ -1,4 +1,4 @@
-package in.irctcap;
+package in.irctcapp;
 
 import static org.junit.Assert.*;
 

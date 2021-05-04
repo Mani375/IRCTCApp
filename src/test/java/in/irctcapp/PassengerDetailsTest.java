@@ -1,4 +1,4 @@
-package in.irctcap;
+package in.irctcapp;
 
 import in.irctcapp.Passenger;
 import in.irctcapp.PassengerManager;
