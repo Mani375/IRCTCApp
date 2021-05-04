@@ -1,4 +1,4 @@
-package in.mani;
+package in.irctcapp;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ public class UserLoginTest {
 
 	@Test
 	// In this Test Case both UserName and Password are Valid
-	public void test1() {
+	public void testValidCredential() {
 		String userName = "User533";
 		String password = "pass6789";
 		String validUserLogin = UserLogin.checkUserLogin(userName, password);
@@ -17,7 +17,7 @@ public class UserLoginTest {
 
 	@Test
 	// In this Test Case Invalid UserName and Valid Password
-	public void test2() {
+	public void testInvalidUsernameValidPassword() {
 		String userName = "User53";
 		String password = "pass6789";
 		String validUserLogin = UserLogin.checkUserLogin(userName, password);
@@ -26,7 +26,7 @@ public class UserLoginTest {
 
 	@Test
 	// In this Test Case Valid UserName and Invalid Password
-	public void test3() {
+	public void testValidUsernameInvalidPassword() {
 		String userName = "User533";
 		String password = "pass67";
 		String validUserLogin = UserLogin.checkUserLogin(userName, password);
@@ -35,7 +35,7 @@ public class UserLoginTest {
 
 	@Test
 	// In this Test Case both UserName and Password are Invalid
-	public void test4() {
+	public void testInvalidCredential() {
 		String userName = "User";
 		String password = "pass";
 		String validUserLogin = UserLogin.checkUserLogin(userName, password);

@@ -1,4 +1,4 @@
-package in.mani;
+package in.irctcapp;
 
 import java.util.HashMap;
 
@@ -8,7 +8,7 @@ public class Registration {
 		loginList.put("User375", "pass1234");
 		loginList.put("User533", "pass6789");
 	}
-	
+
 	/**
 	 * This Method is used to add UserName and Password
 	 * 
@@ -25,13 +25,17 @@ public class Registration {
 	 * @param userName
 	 * @return UserName Status
 	 */
-	public static String validUserName(String userName) {
-		String validUserName = "Not Exists";
+	public static boolean validUserName(String userName) {
+		boolean validUserName = false;
 		for (String key : loginList.keySet()) {
 			if (key.equals(userName)) {
-				validUserName = "Exists";
+				System.out.println("Exists");
+				validUserName = true;
 				break;
 			}
+		}
+		if (!validUserName) {
+			System.out.println("Not Exists");
 		}
 		return validUserName;
 	}
@@ -42,10 +46,14 @@ public class Registration {
 	 * @param password
 	 * @return Password Status
 	 */
-	public static String validPassword(String password) {
-		String validPassword = "Weak Password";
-		if (password.length() >= 8) {
-			validPassword = "Strong Password";
+	public static boolean validPassword(String password) {
+		boolean validPassword = false;
+		if (password.trim().length() >= 8 && password != null) {
+			validPassword = true;
+			System.out.println("Strong Password");
+		}
+		else {
+			System.out.println("Weak Password");
 		}
 		return validPassword;
 	}
