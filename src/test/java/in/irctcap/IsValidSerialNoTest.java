@@ -1,8 +1,11 @@
-package in.irctcapp;
+package in.irctcap;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import in.irctcapp.Passenger;
+import in.irctcapp.PassengerManager;
 
 public class IsValidSerialNoTest {
 

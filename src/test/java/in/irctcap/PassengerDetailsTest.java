@@ -1,4 +1,7 @@
-package in.irctcapp;
+package in.irctcap;
+
+import in.irctcapp.Passenger;
+import in.irctcapp.PassengerManager;
 
 public class PassengerDetailsTest {
 

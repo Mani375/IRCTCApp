@@ -1,8 +1,10 @@
-package in.irctcapp;
+package in.irctcap;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import in.irctcapp.PassengerValidator;
 
 public class IsValidAgeTest {
 
