@@ -51,8 +51,7 @@ public class Registration {
 		if (password.trim().length() >= 8 && password != null) {
 			validPassword = true;
 			System.out.println("Strong Password");
-		}
-		else {
+		} else {
 			System.out.println("Weak Password");
 		}
 		return validPassword;

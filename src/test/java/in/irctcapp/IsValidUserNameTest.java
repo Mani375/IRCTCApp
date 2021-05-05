@@ -4,8 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import in.irctcapp.Registration;
-
 public class IsValidUserNameTest {
 
 	@Test
@@ -21,7 +19,6 @@ public class IsValidUserNameTest {
 	public void testNotExistUserName() {
 		String userName = "User532";
 		boolean valid = Registration.validUserName(userName);
-		assertFalse
-		(valid);
+		assertFalse(valid);
 	}
 }

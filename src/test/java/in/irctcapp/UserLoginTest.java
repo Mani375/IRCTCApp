@@ -4,8 +4,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import in.irctcapp.UserLogin;
-
 public class UserLoginTest {
 
 	@Test
